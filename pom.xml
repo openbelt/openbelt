@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.openbelt</groupId>
+	<artifactId>openbelt-repo</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>The OpenBelt Parent Repository</name>
+	<modules>
+		<module>openbelt-modules</module>
+		<module>openbelt-applications</module>
+		<module>openbelt-doc</module>
+		<module>openbelt-acceptance-tests</module>
+	</modules>
+	<description>Openbelt is the first community driven training and certification platform</description>
+	<developers>
+		<developer>
+			<name>Jauffrey Flach</name>
+			<email>jauffrey.flach@gmail.com</email>
+			<organization>OpenBelt</organization>
+			<organizationUrl>openbelt.org</organizationUrl>
+			<roles>
+				<role>Ideas coordinator</role>
+				<role>Kick-ass developer</role>
+			</roles>
+			<timezone>1</timezone>
+		</developer>
+	</developers>
+	<dependencyManagement>
+	</dependencyManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-eclipse-plugin</artifactId>
+					<version>1.9</version>
+					<configuration>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<!-- Add release plugin -->
+		</plugins>
+	</build>
+</project>
